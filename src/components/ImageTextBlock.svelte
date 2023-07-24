@@ -17,7 +17,7 @@
 	</div>
 
 	<div
-		class="row-start-2 col-start-1 col-span-8 mt-12 md:col-start-7 md:col-span-12 md:row-start-1 md:justify-end md:ml-auto max-w-[33%]"
+		class="row-start-2 mt-12 md:col-start-7 md:justify-end md:ml-auto max-w-[66%] md:max-w-[33%]"
 		id="image-column"
 	>
 		<div class="">
