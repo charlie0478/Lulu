@@ -18,7 +18,7 @@
 </div>
 <div class="container">
 <div class="mx-auto pt-0 p-0">
-	<iframe class="mx-auto h-[33vh] md:h-[75vh] w-[75vw]" src="https://www.youtube.com/embed/HMm1M1R9_tk" title="Make Music Day 2023 - TAFE NSW - Lulu Ilanda ft Victor Jesus - &#39;Whatever Keeps Us Together&#39;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<iframe class="mx-auto h-[33vh] md:h-[75vh] w-[95vw] md:w-[75vw]" src="https://www.youtube.com/embed/HMm1M1R9_tk" title="Make Music Day 2023 - TAFE NSW - Lulu Ilanda ft Victor Jesus - &#39;Whatever Keeps Us Together&#39;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </div>
 <style>
