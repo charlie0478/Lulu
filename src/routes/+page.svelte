@@ -27,7 +27,7 @@
   });
 </script>
 
-<div class="mx-auto my-16">
+<div class="mx-auto my-12">
   <div
     class="text-5xl md:text-7xl lg:text-8xl font-display text-center m-0 p-0"
   >
@@ -51,6 +51,9 @@
     />
   </div>
 </div>
+
+<hr class="my-12 mx-12 border-t-[0.3px]">
+
 <div class="my-12">
 <ImageTextBlock image="./images/356786391_1266285857584271_3633434554063314624_n.jpeg">
 	<span slot="title">I'm Lulu Ilanda</span>

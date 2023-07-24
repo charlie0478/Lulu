@@ -3,9 +3,9 @@
 	export let image;
 </script>
 
-<div class="grid grid-cols-12 md:mx-12 mx-6 pb-12 border-y-1">
-	<div class="flex flex-col self-start justify-end col-span-12 md:col-span-6">
-		<div class="self-start py-12">
+<div class="flex flex-col md:mx-12 mx-6 border-y-1  md:flex-row ">
+	<div class="flex flex-col self-start justify-end  ">
+		<div class="self-start ">
 			<h1 class="font-display text-3xl md:text-4xl text-white m-0 font-light">
 				<slot name="title"/>
 			</h1>
@@ -17,7 +17,7 @@
 	</div>
 
 	<div
-		class="row-start-2 col-start-1 col-span-8 mt-12 md:col-start-7 md:col-span-12 md:row-start-1"
+		class="row-start-2 col-start-1 col-span-8 mt-12 md:col-start-7 md:col-span-12 md:row-start-1 md:justify-end md:ml-auto max-w-[33%]"
 		id="image-column"
 	>
 		<div class="">
