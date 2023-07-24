@@ -21,7 +21,7 @@
 		id="image-column"
 	>
 		<div class="">
-			<img src={image} class="w-full grayscale" alt="woman drinks coffee"/>
+			<img src="{image}" class="" alt="Lulu Llush"/>
 		</div>
 	</div>
 </div>
