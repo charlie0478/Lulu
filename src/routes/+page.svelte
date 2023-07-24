@@ -46,11 +46,6 @@
 		margin-inline: auto;
 	}
 
-	
-
-
-	
-
 	span {
 		padding: 0;
 		margin: 0;
