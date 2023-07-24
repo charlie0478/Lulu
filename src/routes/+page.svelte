@@ -54,7 +54,7 @@
 <div class="my-12">
 <ImageTextBlock image="./images/356786391_1266285857584271_3633434554063314624_n.jpeg">
 	<span slot="title">I'm Lulu Ilanda</span>
-	<span slot="para">A multi instrumentalist from the Blue Mountains in Australia.</span>
+	<span slot="para">A multi instrumentalist from the Blue Mountains of Australia.</span>
 </ImageTextBlock>
 </div>
 
