@@ -2,7 +2,7 @@
 	import { page } from '$app/stores'; // import page store from SvelteKit
 	import Button from "../../Button.svelte";
 
-	let pageName = $page.url.pathname; // assign page path to pageName
+	
 </script>
 
 <nav class="flex flex-row flex-grow-1 max-w-96 ">

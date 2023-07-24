@@ -23,7 +23,8 @@
 	svg line {
 		stroke: currentColor;
 		stroke-width: 1;
-		transition: transform 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
 	}
 
 	button {
@@ -32,6 +33,8 @@
 
 	.open svg {
 		transform: scale(0.7);
+		
+		color: rgb(187, 68, 4);
 	}
 
 	.open #top {
