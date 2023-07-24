@@ -1,16 +1,35 @@
 <script>
+	import { onMount } from 'svelte';
 
 	let title = 'Lulu Ilanda';
 	let titleArray = Array.from(title);
-	
 
-	
+	const randomBetween = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+	const triggerHover = (element) => {
+		element.style.color = "rgb(187, 68, 4)";
+		setTimeout(() => {
+			element.style.color = "";
+		}, 500);
+	}
+
+	onMount(() => {
+		titleArray.forEach((_, index) => {
+			setTimeout(() => {
+				const element = document.getElementById(`title${index}`);
+				if (element) {
+					triggerHover(element);
+				}
+			}, randomBetween(500, 3000));
+		});
+	}); 
 </script>
+
 
 <div class="mx-auto my-16">
 	<div class="text-5xl md:text-7xl lg:text-8xl font-display text-center m-0 p-0">
-		{#each titleArray as letter}
-			<span class="hover-letter p-0 m-0 font-display text-white" id="title"
+		{#each titleArray as letter, index}
+			<span class="hover-letter p-0 m-0 font-display text-white" id="title{index}"
 				>{letter === ' ' ? ' ' : letter}</span
 			>
 		{/each}
@@ -29,18 +48,19 @@
 
 	
 
+
+	
+
 	span {
 		padding: 0;
 		margin: 0;
+		transition: color 0.5s ease-out;
 	}
-	
-	#title {
-		transition: color 0.3s ease-out;
-	}
-	#title:hover {
 
+	.hover-letter:hover {
 		color: rgb(187, 68, 4);
 	}
+
 
 	
 </style>
