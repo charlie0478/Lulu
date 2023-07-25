@@ -6,7 +6,9 @@
 <style>
 	.responsive-image {
 		max-width: 100%;
+		width: 100%;
 		height: auto;
+		
 	}
 </style>
 
@@ -22,7 +24,7 @@
 		</div>
 		
 	</div>
-
+	{#if image}
 	<div
 		class="row-start-2 mt-12 md:col-start-7 md:justify-end md:ml-auto max-w-[66%] md:max-w-[33%]"
 		id="image-column"
@@ -31,4 +33,5 @@
 			<img src="{image}" loading='lazy' class="responsive-image" alt="Lulu"/>
 		</div>
 	</div>
+	{/if}
 </div>

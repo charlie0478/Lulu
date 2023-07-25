@@ -1,10 +1,6 @@
 {
 	"/": [],
 	"/About": [],
-	"/ImageTrack": [],
-	"/Images": [
-		"src/routes/Images/+page.js"
-	],
 	"/LifeModelling": [],
 	"/Listen": [],
 	"/sitemap.xml": [

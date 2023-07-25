@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/ImageTrack/+page.svelte";
+export { default as component } from "../../../../src/routes/LifeModelling/+page.svelte";
