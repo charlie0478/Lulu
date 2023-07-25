@@ -6,5 +6,8 @@
 		"src/routes/Images/+page.js"
 	],
 	"/LifeModelling": [],
-	"/Listen": []
+	"/Listen": [],
+	"/sitemap.xml": [
+		"src/routes/sitemap.xml/+server.js"
+	]
 }
