@@ -10,7 +10,7 @@
 
 
 <svelte:head>
-  <title>About Lulu Ilanda</title>
+  <title>About</title>
   <meta name="description" content="Learn about Lulu and her creative practice." />
 
 </svelte:head>

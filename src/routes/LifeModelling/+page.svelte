@@ -12,7 +12,7 @@
 </div>
 
 <svelte:head>
-    <title>Life Modelling Carousel</title>
+    <title>Life Modelling</title>
     <meta name="description" content="Lulu Ilanda's Modelling carousel, black and white photography and life drawing." />
   
   </svelte:head>
