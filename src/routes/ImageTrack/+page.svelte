@@ -1,15 +1,20 @@
 <script>
-import { onMount } from "svelte";
+  import { page } from "$app/stores";
+import { onMount,afterUpdate } from "svelte";
 
 let track;
-$:screenSize = window.innerWidth;
+let screenSize;
 
 onMount(() => {
-  track = document.getElementById("image-track");
-
-    
-
-});
+    track = document.getElementById("image-track");
+    track.dataset.prevPercentage = "0";
+    track.dataset.mouseDownAt = "0";
+    track.dataset.percentage = "0";
+  });
+  
+  afterUpdate(() => {
+    screenSize = window.innerWidth;
+  });
 
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
@@ -23,12 +28,12 @@ const handleOnMove = e => {
   if(track.dataset.mouseDownAt === "0") return;
   
   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth;
+        maxDelta = screenSize/2;
   
-  const percentage = (mouseDelta / maxDelta) * -200,
+  const percentage = (mouseDelta / maxDelta) * -100,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        boundaryValue = screenSize < 650 ? -600 : -300, // set boundary value depending on the screen size
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), boundaryValue);
+       
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
   
   track.dataset.percentage = nextPercentage;
   
@@ -38,15 +43,14 @@ const handleOnMove = e => {
   
   for(const image of track.getElementsByClassName("image")) {
     image.animate({
-      objectPosition: `${screenSize < 650 ? 100 + nextPercentage/6 : 100 + nextPercentage/3}% center`
+      objectPosition: `${100 + nextPercentage}% center`
     }, { duration: 1200, fill: "forwards" });
   }
 }
 
 
 </script>
-<svelte:window on:mousedown="{e => handleOnDown(e)}" on:touchstart="{e => handleOnDown(e.touches[0])}" on:mouseup="{e => handleOnUp(e)}" on:touchend="{e => handleOnUp(e.touches[0])}" on:mousemove="{e => handleOnMove(e)}" on:touchmove="{e => handleOnMove(e.touches[0])}"  />
-
+<svelte:window bind:innerWidth={screenSize} on:resize="{() => screenSize = window.innerWidth}" on:mousedown="{e => handleOnDown(e)}" on:touchstart="{e => handleOnDown(e.touches[0])}" on:mouseup="{e => handleOnUp(e)}" on:touchend="{e => handleOnUp(e.touches[0])}" on:mousemove="{e => handleOnMove(e)}" on:touchmove="{e => handleOnMove(e.touches[0])}"  />
 <div class="relative h-[100vh] w-[100vw] overflow-x-hidden">
 <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
     <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
@@ -78,7 +82,7 @@ const handleOnMove = e => {
     img {
         margin-bottom: 50px;
     }
-    #image-track > .image {
+    #image-track > img {
       width: 40vmin;
       height: 56vmin;
       object-fit: cover;

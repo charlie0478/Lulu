@@ -61,6 +61,11 @@
 </ImageTextBlock>
 </div>
 
+<svelte:head>
+  <title>Lulu Ilanda</title>
+  <meta name="description" content="Lulu Ilanda's Website" />
+
+</svelte:head>
 <style>
   div {
     position: relative;
