@@ -3,6 +3,13 @@
 	export let image;
 </script>
 
+<style>
+	.responsive-image {
+		max-width: 100%;
+		height: auto;
+	}
+</style>
+
 <div class="flex flex-col md:mx-12 mx-6 border-y-1  md:flex-row ">
 	<div class="flex flex-col self-start justify-end  ">
 		<div class="self-start ">
@@ -21,7 +28,7 @@
 		id="image-column"
 	>
 		<div class="">
-			<img src="{image}" class="" alt="Lulu"/>
+			<img src="{image}" loading='lazy' class="responsive-image" alt="Lulu"/>
 		</div>
 	</div>
 </div>
