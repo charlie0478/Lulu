@@ -5,10 +5,10 @@
     import { onMount } from 'svelte';
 
     let isMobile = true;
-
+    //get screen size rather than window size
     onMount(() => {
 		const handleResize = () => {
-			isMobile = window.innerWidth < 768;
+			isMobile = window.innerWidth < 768 || window.innerHeight < 600 && window.innerWidth < 1024;
 		};
 
 		handleResize();
