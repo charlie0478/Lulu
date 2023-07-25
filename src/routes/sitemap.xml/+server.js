@@ -11,6 +11,11 @@ export async function GET() {
             xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
         >
             <!-- <url> elements go here -->
+            https://www.luluilanda.com.au/About
+            https://www.luluilanda.com.au/Listen
+            https://www.luluilanda.com.au/LifeModelling
+            https://www.luluilanda.com.au/
+
         </urlset>`.trim(),
         {
             headers: {
