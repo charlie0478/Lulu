@@ -56,7 +56,7 @@
 <hr class="my-12 mx-12 border-t-[0.3px]">
 
 <div class="my-12">
-<ImageTextBlock>
+<ImageTextBlock image={"./images/356786391_1266285857584271_3633434554063314624_n.webp"} width="400">
 	<span slot="title">I'm Lulu Ilanda</span>
 	<span slot="para">A multi instrumentalist from the Blue Mountains of Australia.</span>
 </ImageTextBlock>

@@ -1,13 +1,13 @@
 <script>
 	import Button from './Button.svelte';
 	export let image;
+	export let width;
 </script>
 
 <style>
 	.responsive-image {
 		max-width: 100%;
-		width: 100%;
-		height: auto;
+		object-fit: contain;
 		
 	}
 </style>
@@ -30,7 +30,7 @@
 		id="image-column"
 	>
 		<div class="">
-			<img src="{image}" loading='lazy' class="responsive-image" alt="Lulu"/>
+			<img src="{image}" width="{width}" loading='lazy' class="responsive-image" alt="Lulu"/>
 		</div>
 	</div>
 	{/if}
