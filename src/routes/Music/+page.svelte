@@ -18,6 +18,6 @@ class="mx-auto md:w-1/2 lg-md:w-1/4 w-3/4 mt-6"
 />
 
 <svelte:head>
-	<title>Listen</title>
+	<title>Music</title>
 	<meta name="description" content="Listen to Lulu's music." />
 </svelte:head>
