@@ -10,7 +10,7 @@
 	<nav class="mt-3 pl-12 py-20 w-[70vw] flex font-light text-white text-2xl flex-col">
 		<a class="" href="/" on:click={handleClick}><li class="appearance-none list-none font-display py-1 border-b-[1px] border-transparent w-1/3 sm:w-1/4 {($page.url.pathname === '/') ? 'selected' : ''}">Home</li></a>
 		<a class=" font-display py-1 border-b-[1px] border-transparent {($page.url.pathname === '/About') ? 'selected' : ''} w-1/3 sm:w-1/4" href="/About" on:click={handleClick}>About</a>
-		<a class=" font-display py-1 border-b-[1px] border-transparent {($page.url.pathname === '/Listen') ? 'selected' : ''} w-1/3 sm:w-1/4" href="/Listen" on:click={handleClick}>Listen</a>
+		<a class=" font-display py-1 border-b-[1px] border-transparent {($page.url.pathname === '/Music') ? 'selected' : ''} w-1/3 sm:w-1/4" href="/Music" on:click={handleClick}>Music</a>
 		<a class=" font-display py-1 border-b-[1px] border-transparent {($page.url.pathname === '/LifeModelling') ? 'selected' : ''} w-3/4 sm:w-1/2" href="/LifeModelling" on:click={handleClick}>Life Modelling</a>
 
 

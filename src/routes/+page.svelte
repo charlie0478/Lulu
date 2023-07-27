@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import ImageTextBlock from "../components/ImageTextBlock.svelte";
-  import IntersectionObserver from "../components/IntersectionObserver.svelte";
+
   let title = "Lulu Ilanda";
   let titleArray = Array.from(title);
 
@@ -42,13 +42,14 @@
 <div class="container mx-auto">
   <div class="mx-auto pt-0 p-0">
     <iframe
+      loading="lazy"
       class="mx-auto h-[33vh] sm:h-[50vh] md:h-[75vh] w-[95vw] md:w-[75vw]"
       src="https://www.youtube.com/embed/HMm1M1R9_tk"
       title="Make Music Day 2023 - TAFE NSW - Lulu Ilanda ft Victor Jesus - &#39;Whatever Keeps Us Together&#39;"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
-      loading="lazy"
+      
     />
   </div>
 </div>
@@ -56,7 +57,7 @@
 <hr class="my-12 mx-12 border-t-[0.3px]">
 
 <div class="my-12">
-<ImageTextBlock image={"./images/356786391_1266285857584271_3633434554063314624_n.webp"} width="400">
+<ImageTextBlock image={"./images/356786391_1266285857584271_3633434554063314624_n.webp"} imgWidth="400">
 	<span slot="title">I'm Lulu Ilanda</span>
 	<span slot="para">A multi instrumentalist from the Blue Mountains of Australia.</span>
 </ImageTextBlock>
